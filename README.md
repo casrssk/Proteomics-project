@@ -14,4 +14,5 @@ Step 4: After getting familiarised with the software, I used the modified forked
 
 Step 5: Results from Deepnovo were compiled using data_preprocessing.py. This python code looks into the modifications and replaces I/L with all L in the predicted sequences. Secondly, it changes all Cmod to C, and all Qmod, Nmodand Mmod to Q, M, N respectively.
 
-Step 6: For running the model, you need all the files named in docker file in the working directory and then you can build the docker image (docker build -f Dockerfile . -t proteomics_proj). Run docker image docker run -p 8888:8888 proteomics_proj:latest. 
+Step 6: For running the model, you need all the files named in docker file in the working directory. you can download the train dataset from this link https://drive.google.com/file/d/1hTMZJ2k-9b9csTll6eCapuSyit2F7ozi/view?usp=sharing and save in your working directory.
+Now you can build the docker image (docker build -f Dockerfile . -t proteomics_proj). Run docker image docker run -p 8888:8888 proteomics_proj:latest. 
